@@ -1,0 +1,11 @@
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* hoặc sử dụng position: absolute; */
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* thêm margin dưới cho phần body */
+    height: 100px; /* Xác định chiều cao của footer */
+}

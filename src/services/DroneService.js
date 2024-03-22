@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const DRONE_BASE_REST_API_URL = 'http://localhost:8080/api/v1/drones';
+const DRONE_BASE_REST_API_URL = 'http://localhost:8080/drone/';
 
 class DroneService{
 
@@ -13,15 +13,15 @@ class DroneService{
     }
 
     getDroneById(flightId){
-        return axios.get(DRONE_BASE_REST_API_URL + '/' + flightId);
+        return axios.get(DRONE_BASE_REST_API_URL +'search?key='+ flightId);
     }
 
-    updateDrone(flightId, drone){
-        return axios.put(DRONE_BASE_REST_API_URL + '/' +flightId, drone);
+    updateDrone(drone){
+        return axios.put(DRONE_BASE_REST_API_URL + 'update' , drone);
     }
 
     deleteDrone(flightId){
-        return axios.delete(DRONE_BASE_REST_API_URL + '/' + flightId);
+        return axios.delete(DRONE_BASE_REST_API_URL + 'delete?id=' + flightId);
     }
 
     static getStringId(drone) {

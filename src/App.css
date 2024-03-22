@@ -7,3 +7,41 @@
   text-align: center;
   color: white;
 }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.report, .route {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.report h3, .route h3 {
+  margin-top: 0;
+}
+
+.reportDetails, .routeDetails {
+  margin-bottom: 10px;
+}
+
+.data, .checkpoints {
+  margin-top: 10px;
+}
+
+.data ul, .checkpoints ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.data li, .checkpoints li {
+  margin-bottom: 5px;
+}
+
+.loading {
+  font-style: italic;
+  color: #999;
+}
